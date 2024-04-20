@@ -28,7 +28,7 @@ const Slider = ({ slides }) => {
           key={index}
           src={slide.url}
           alt={`Slide ${index}`}
-          className={`w-full h-full bg-center bg-cover absolute top-0 left-0 ${
+          className={`w-full h-full object-cover absolute top-0 left-0 ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           } transition-all duration-${duration}`}
         />
@@ -36,13 +36,13 @@ const Slider = ({ slides }) => {
 
       <button
         onClick={prevSlide}
-        className={`absolute top-1/2 -translate-y-1/2 left-5 rounded-full p-2 bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-scale duration-${duration}`}
+        className={`absolute top-1/2 -translate-y-1/2 left-5 rounded-full p-2 bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-all duration-${duration}`}
       >
         <HiOutlineArrowLongLeft className="text-2xl" />
       </button>
       <button
         onClick={nextSlide}
-        className={`absolute top-1/2 -translate-y-1/2 right-5 rounded-full p-2 bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-scale duration-${duration}`}
+        className={`absolute top-1/2 -translate-y-1/2 right-5 rounded-full p-2 bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-all duration-${duration}`}
       >
         <HiOutlineArrowLongRight className="text-2xl" />
       </button>
