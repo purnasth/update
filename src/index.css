@@ -1,16 +1,23 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-
   body {
     /* font-family: "Sedan", serif; */
     /* font-family: "Noto Serif", serif; */
     @apply font-notoSerif;
+  }
+
+  .hero-slider-button {
+    @apply absolute top-1/2 -translate-y-1/2 rounded-full p-3 border bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-all duration-1000;
+  }
+
+  .room-slider-button {
+    @apply absolute bottom-5 rounded-full py-1 px-6 bg-black/5 group-hover:bg-black/30 backdrop-blur-sm border  text-white cursor-pointer transition-all duration-1000;
   }
 }

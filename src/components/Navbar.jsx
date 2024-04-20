@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IoMenu } from "react-icons/io5";
+import { HiOutlineMenu } from "react-icons/hi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
@@ -28,14 +28,14 @@ const Navbar = () => {
       <nav>
         <header className="flex items-center justify-between px-12 py-4 z-50 fixed w-full top-0 text-white bg-gradient-to-b from-black/50 to-black/0">
           <button>
-            <FaWhatsapp className="text-2xl" />
+            <FaWhatsapp className="text-3xl" />
           </button>
           <h1 className="text-2xl">Logo</h1>
           <button onClick={toggleMenu}>
             {isMenuOpen ? (
-              <IoClose className="text-2xl" />
+              <IoClose className="text-3xl" />
             ) : (
-              <IoMenu className="text-2xl" />
+              <HiOutlineMenu className="text-3xl" />
             )}
           </button>
         </header>
