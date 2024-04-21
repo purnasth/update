@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 import Facilities from "./components/Facilities";
 import Accommodation from "./pages/Accommodation";
+import Hall from "./pages/Hall";
 
 const App = () => {
   const slides = [
@@ -73,6 +74,7 @@ const App = () => {
         trueClassName="opacity-100 scale-100 translate-y-0"
         falseClassName="opacity-0 scale-90 -translate-y-4 -z-10"
       /> */}
+      <Hall />
     </>
   );
 };
