@@ -5,6 +5,7 @@ import Facilities from "./components/Facilities";
 import Accommodation from "./pages/Accommodation";
 import Hall from "./pages/Hall";
 import FilterButton from "./components/FilterButton";
+import Gallery from "./components/Gallery";
 
 const App = () => {
   const slides = [
@@ -57,6 +58,7 @@ const App = () => {
         trueClassName="opacity-100"
         falseClassName="opacity-0"
       />
+      <Gallery />
       <FilterButton />
       <Facilities />
       <Accommodation />
